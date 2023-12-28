@@ -6,8 +6,7 @@ lastmod: 2023-11-16T14:30:00+07:00
 draft: false
 author: "ClownCS"
 authorLink: "https://clowncs.github.io"
-
-tags: ["RE", "BackdoorCTF","2023]
+tags: ["RE", "BackdoorCTF","2023"]
 categories: ["Writeups"]
 
 lightgallery: true
