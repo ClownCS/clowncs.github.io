@@ -1,13 +1,13 @@
 ---
 weight: 1
-title: "HACK THE BOO 2023 - Reverse Engineering Writeups"
+title: "HACK THE BOO 2023"
 date: 2023-11-16T14:30:00+07:00
 lastmod: 2023-11-16T14:30:00+07:00
 draft: false
 author: "ClownCS"
 authorLink: "https://clowncs.github.io"
 
-tags: ["RE", "HackTheBoo"]
+tags: ["RE", "HackTheBoo","2023"]
 categories: ["Writeups"]
 
 lightgallery: true
