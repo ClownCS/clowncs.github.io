@@ -27,7 +27,7 @@ This CTF i did 3 challenges but one of it is unintended ( using strings | grep )
 
 Simple z3 problem so i just put my script here
 
-```python=
+```python
 from z3 import *
 
 
@@ -89,11 +89,11 @@ else:
     print("No solution found")
 ```
 
-Flag: *uiuctf{2a142dd72e87fa9c1456a32d1bc4f77739975e5fcf5c6c0}*
+Flag: ***uiuctf{2a142dd72e87fa9c1456a32d1bc4f77739975e5fcf5c6c0}***
 
 ## Pwnymaps
 
-```C=
+```C
 int __fastcall main(int argc, const char **argv, const char **envp)
 {
   int v3; // ebx
@@ -214,7 +214,7 @@ The code flow contains bunch of bitwise functions. But after all, we can regconi
 - First, 32 bit hash can be unhash. 
 - First attempt using z3 but not work :(
 - Second for most of function can be revert. So this problem is kind of math. After suffering with my team we were able to recover x, y
-```python=
+```python
 from Crypto.Util.number import *
 
 ROUND = 335
@@ -497,7 +497,7 @@ plt.show()
 
 ![image](https://github.com/clowncs/clowncs.github.io/assets/90112096/eba2a79c-950a-40ee-801d-dcb95eff1228)
 
-Flag: *uiuctf{i_prefer_pwnymaps}*
+Flag: ***uiuctf{i_prefer_pwnymaps}***
 
 * https://github.com/Pusty/writeups/blob/master/UIUCTF2024/z3solve.py
 
@@ -796,7 +796,7 @@ b'\n\x08flag.txtJ\x07\x10\x80\xb0\x9d\xc2\xdf\x01'
 b'\n\x17C:\\Users\\Ronan\\flag.txt\x12\x04gzip\x18\x012O\x1f\x8b\x08\x00\x00\x00\x00\x00\x04\xff\x003\x00\xcc\xffuiuctf{GOOS3_CH4S3_ST0P_RUNN1NG_STR1NGS_0N_MY_CHAL}\x01\x00\x00\xff\xff\xe1\xd1\xe1\xcc3\x00\x00\x00@\x01J\x00'
 ```
 
-Flag: *uiuctf{GOOS3_CH4S3_ST0P_RUNN1NG_STR1NGS_0N_MY_CHAL}*
+Flag: ***uiuctf{GOOS3_CH4S3_ST0P_RUNN1NG_STR1NGS_0N_MY_CHAL}***
 
 I couldn't solve this in time because lack of knowledge but after the ctf, i try to redo this challenge and it helps me to know about SliverC2. Thanks UIUCTF organizer for such a cool challenge.
 
