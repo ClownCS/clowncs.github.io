@@ -1,8 +1,8 @@
 ---
 weight: 1
-title: "R3CTF"
-date: 2024-06-10
-lastmod: 2024-06-10
+title: "UIUCTF2024"
+date: 2024-07-01
+lastmod: 2024-07-01
 draft: false
 author: "clowncs"
 authorLink: "https://clowncs.github.io"
@@ -17,6 +17,7 @@ toc:
 ---
 Solutions for some challenges in UIUCTF 2024
 
+<!--more-->
 # UIUCTF
 
 This CTF i did 3 challenges but one of it is unintended ( using strings | grep ). So I will put writeup on 2 challenges i did and the revenge challenge that I couldn't afford to do it in time.
