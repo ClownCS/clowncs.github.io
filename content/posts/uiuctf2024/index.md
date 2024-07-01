@@ -494,7 +494,7 @@ plt.grid(True)
 plt.show()
 ```
 
-![image](https://hackmd.io/_uploads/SkuQIwkDC.png)
+![image](https://github.com/clowncs/clowncs.github.io/assets/90112096/eba2a79c-950a-40ee-801d-dcb95eff1228)
 
 Flag: *uiuctf{i_prefer_pwnymaps}*
 
@@ -506,17 +506,17 @@ The challenge provides two file: dmp, pcap file. We can extract the malware from
 
 Before analysis anything i always take a quick look on DIE. And we got something interesting.
 
-![image](https://hackmd.io/_uploads/SJPw1hywR.png)
+![image](https://github.com/clowncs/clowncs.github.io/assets/90112096/86454685-2398-4aa8-8637-47eeb108f876)
 
 The zip file contains the Desktop Goose. Seems this a normal file `https://github.com/DesktopGooseUnofficial`. So at this moment, I have a theory that the malware we just extracted from pcap will unzip and run this subroutine and at the same time encrypt the data in some way.
 
 Turn on IDA, find some strings related to zip
 
-![image](https://hackmd.io/_uploads/BJR_ZnJwC.png)
+![image](https://github.com/clowncs/clowncs.github.io/assets/90112096/6220c995-7ebd-4882-9a5e-fc845a6fa05f)
 
 Luckily we found this, trace back we found this function will unzip the file ``sub_1400243FC``
 
-![image](https://hackmd.io/_uploads/rJR6Z3yDC.png)
+![image](https://github.com/clowncs/clowncs.github.io/assets/90112096/218208ae-827b-4b5c-ae11-b3e5ab5153a8)
 
 Before trace that function, i want to take a look on the main function. So usually the main function will be after the line ``result = main_func`` in ``start`` 
 
@@ -636,7 +636,7 @@ LABEL_10:
 ```
 Inside ``sub_14000B7E0`` will have a main function that we need to take a close look. This case is ``sub_14000A1B5``, I'll change that to ``main``. The reason I tell this challenge is cursed because this function is really weird like I couldn't understand it by just static. When debugging it, i realize there is still one more binary in golang and seem this is the real malware. After extracting it, i put it on virustotal and got this
 
-![image](https://hackmd.io/_uploads/rk6RtDyD0.png)
+![image](https://github.com/clowncs/clowncs.github.io/assets/90112096/4c48828a-c928-406b-99bd-0fcb1e4b6bcc)
 
 Seem this malware using SliverC2 framework so it must has some report or tools that able to analysis
 
